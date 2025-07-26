@@ -6,38 +6,38 @@ class SsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff1c2120),
+      backgroundColor: Color(0xfff7fafc),
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(60),
         child: AppBar(
-          backgroundColor: Color(0xff1c2120),
+          backgroundColor: Color(0xfff7fafc),
           elevation: 0,
-          iconTheme: const IconThemeData(color: Colors.white70), // 设置返回按钮为白色
+          iconTheme: const IconThemeData(color: Color(0xff1c2120)), // 设置返回按钮为白色
           title: Container(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             decoration: BoxDecoration(
-              color: Color(0xff272b2a),
+              color: Color(0XFFe8edf5),
               borderRadius: BorderRadius.circular(24),
             ),
             child: Row(
               children: [
-                const Icon(Icons.search, color: Colors.grey),
+                const Icon(Icons.search, color: Color(0xff1c2120)),
                 const SizedBox(width: 8),
                 Expanded(
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: '脑卒中康复训练',
-                      hintStyle: TextStyle(color: Colors.grey.shade600),
+                      hintStyle: TextStyle(color: Color(0xff1c2120)),
                       border: InputBorder.none,
                     ),
                   ),
                 ),
-                const Icon(Icons.camera_alt, color: Colors.grey),
+                const Icon(Icons.camera_alt, color: Color(0xff1c2120)),
               ],
             ),
           ),
           actions: [
-            Text("搜索       ",style:TextStyle(color: Colors.white70),)
+            Text("搜索       ",style:TextStyle(color: Color(0xff1c2120)),)
           ],
         ),
       ),
@@ -49,7 +49,7 @@ class SsPage extends StatelessWidget {
             // 历史记录部分
             const Text(
               '历史记录',
-              style: TextStyle(color:Colors.white,fontSize: 16, fontWeight: FontWeight.bold),
+              style: TextStyle(color:Color(0xff1c2120),fontSize: 16, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             Wrap(
@@ -70,7 +70,7 @@ class SsPage extends StatelessWidget {
               children: [
                 const Text(
                   '猜你想搜',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.white),
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Color(0xff1c2120)),
                 ),
                 Row(
                   children: [
@@ -102,7 +102,7 @@ class SsPage extends StatelessWidget {
             // 今日热点话题分享部分
             const Text(
               '今日热点话题分享',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.white),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Color(0xff1c2120)),
             ),
             const SizedBox(height: 8),
             Expanded(
@@ -125,8 +125,8 @@ class SsPage extends StatelessWidget {
   // 历史记录的 Chip
   Widget _buildHistoryChip(String label) {
     return Chip(
-      label: Text(label,style: TextStyle(color: Colors.white70),),
-      backgroundColor: Color(0xff272b2a),
+      label: Text(label,style: TextStyle(color: Color(0xff1c2120)),),
+      backgroundColor: Color(0XFFe8edf5),
     );
   }
 
@@ -136,7 +136,7 @@ class SsPage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Text(
         title,
-        style: const TextStyle(fontSize: 14, color: Colors.white70),
+        style: const TextStyle(fontSize: 14, color: Color(0xff1c2120)),
       ),
     );
   }
@@ -148,14 +148,14 @@ class SsPage extends StatelessWidget {
       leading: Text(
         '$rank.',
         style: TextStyle(
-          color: rank <= 3 ? Colors.red : Colors.white70,
+          color: rank <= 3 ? Colors.red : Color(0xff1c2120),
           fontSize: 18,
           fontWeight: FontWeight.bold,
         ),
       ),
       title: Text(
         title,
-        style: const TextStyle(fontSize: 14,color: Colors.white70),
+        style: const TextStyle(fontSize: 14,color: Color(0xff1c2120)),
       ),
       trailing: const Icon(Icons.arrow_forward, color: Colors.white70),
     );

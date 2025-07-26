@@ -7,18 +7,18 @@ class FaxianPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff1c2120),
+      backgroundColor: Color(0xfff7fafc),
       appBar: AppBar(
-        backgroundColor: Color(0xff1c2120),
+        backgroundColor: Color(0xfff7fafc),
         title: const Text(
           '消息',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Color(0xff1c2120)),
         ),
         centerTitle: true, // 设置标题居中
         automaticallyImplyLeading: false, // 去掉返回箭头
         actions: [
           PopupMenuButton<String>(
-            color: const Color(0xFF272B2A), // 设置菜单背景颜色
+            color: const Color(0XFFe8edf5), // 设置菜单背景颜色
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12), // 设置圆角
             ),
@@ -26,10 +26,10 @@ class FaxianPage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  const Icon(Icons.people_outline, color: Colors.white70),
+                  const Icon(Icons.people_outline, color: Color(0xff1c2120)),
                   const Text(
                     '发现群聊',
-                    style: TextStyle(color: Colors.white70, fontSize: 16),
+                    style: TextStyle(color: Color(0xff1c2120), fontSize: 16),
                   ),
                 ],
               ),
@@ -48,22 +48,22 @@ class FaxianPage extends StatelessWidget {
               const PopupMenuItem(
                 value: '创建群聊',
                 child: ListTile(
-                  leading: Icon(Icons.add, color: Colors.white70),
-                  title: Text('创建群聊',style: TextStyle(color: Colors.white70),),
+                  leading: Icon(Icons.add, color: Color(0xff1c2120)),
+                  title: Text('创建群聊',style: TextStyle(color: Color(0xff1c2120)),),
                 ),
               ),
               const PopupMenuItem(
                 value: '群聊广场',
                 child: ListTile(
-                  leading: Icon(Icons.group, color: Colors.white70),
-                  title: Text('群聊广场',style: TextStyle(color: Colors.white70),),
+                  leading: Icon(Icons.group, color: Color(0xff1c2120)),
+                  title: Text('群聊广场',style: TextStyle(color: Color(0xff1c2120)),),
                 ),
               ),
               const PopupMenuItem(
                 value: '附近的群',
                 child: ListTile(
-                  leading: Icon(Icons.near_me, color: Colors.white70),
-                  title: Text('附近的群',style: TextStyle(color: Colors.white70),),
+                  leading: Icon(Icons.near_me, color: Color(0xff1c2120)),
+                  title: Text('附近的群',style: TextStyle(color: Color(0xff1c2120)),),
                 ),
               ),
             ],
@@ -121,7 +121,7 @@ class FaxianPage extends StatelessWidget {
         const SizedBox(height: 8),
         Text(
           label,
-          style: const TextStyle(fontSize: 16, color: Colors.white,fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 16, color: Color(0xff1c2120),fontWeight: FontWeight.bold),
         ),
       ],
     );
@@ -151,17 +151,17 @@ class FaxianPage extends StatelessWidget {
           title,
           style: const TextStyle(
             fontSize: 16,
-            color: Colors.white,
+            color: Color(0xff1c2120),
             fontWeight: FontWeight.bold,
           ),
         ),
         subtitle: Text(
           subtitle,
-          style: const TextStyle(fontSize: 13, color: Colors.white70),
+          style: const TextStyle(fontSize: 13, color: Color(0xff1c2120)),
         ),
         trailing: Text(
           time,
-          style: const TextStyle(fontSize: 12, color: Colors.white54),
+          style: const TextStyle(fontSize: 12, color: Color(0xff1c2120)),
         ),
         onTap: () {
           // 跳转到聊天详情页

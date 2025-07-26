@@ -8,7 +8,7 @@ class ShouyePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff1c2120),
+      backgroundColor: Color(0xfff7fafc),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -31,17 +31,17 @@ class ShouyePage extends StatelessWidget {
                       children: [
                         Text(
                           "早上好!!",
-                          style: TextStyle(color: Colors.white70, fontSize: 14),
+                          style: TextStyle(color: Colors.grey, fontSize: 14),
                         ),
                         SizedBox(height: 5),
                         Text(
                           "花开富贵",
-                          style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                          style: TextStyle(color: Color(0xff1c2120), fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
                     const Spacer(),
-                    const Icon(Icons.notifications_none, color: Colors.white),
+                    const Icon(Icons.notifications_none, color: Color(0xff1c2120)),
                   ],
                 ),
               ),
@@ -53,7 +53,7 @@ class ShouyePage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 child: Text(
                   "热门康复训练计划",
-                  style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w600),
+                  style: TextStyle(color: Color(0xff1c2120), fontSize: 25, fontWeight: FontWeight.w600),
                 ),
               ),
 
@@ -95,7 +95,7 @@ class ShouyePage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Text(
                   "今天的康复训练",
-                  style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w600),
+                  style: TextStyle(color: Color(0xff1c2120), fontSize: 25, fontWeight: FontWeight.w600),
                 ),
               ),
 
@@ -106,7 +106,7 @@ class ShouyePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Color(0XFFe8edf5),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   padding: const EdgeInsets.all(12),
@@ -128,12 +128,12 @@ class ShouyePage extends StatelessWidget {
                           children: [
                             Text(
                               "患侧卧位",
-                              style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                              style: TextStyle(color: Color(0xff1c2120), fontSize: 18, fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 5),
                             Text(
                               "24 天挑战",
-                              style: TextStyle(color: Colors.white70, fontSize: 14),
+                              style: TextStyle(color: Color(0xff1c2120), fontSize: 14),
                             ),
                           ],
                         ),

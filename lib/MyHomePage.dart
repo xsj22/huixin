@@ -14,7 +14,7 @@ class _MyhomepageState extends State<Myhomepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff1c2120),
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           SizedBox(
@@ -33,7 +33,7 @@ class _MyhomepageState extends State<Myhomepage> {
           Text(
             "Science drives",
             style: TextStyle(
-              color: Colors.white,
+              color: Color(0xff1c2120),
               fontSize: 35,
               fontWeight: FontWeight.bold, // 加粗
             ),
@@ -44,7 +44,7 @@ class _MyhomepageState extends State<Myhomepage> {
             child: Text(
               "每一步康复，都是生命的勋章，您的康复之路将有我们陪伴",
               style: TextStyle(
-                color: Colors.white,
+                color: Color(0xff1c2120),
                 fontWeight: FontWeight.bold,
                 fontSize: 15,
               ),

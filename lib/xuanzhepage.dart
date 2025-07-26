@@ -27,7 +27,7 @@ class Xuanzepage extends StatelessWidget {
 
 
     return Scaffold(
-      backgroundColor: Color(0xff1c2120),
+      backgroundColor: Color(0xfff7fafc),
       body: SafeArea(
         child: Column(
           children: [
@@ -41,10 +41,10 @@ class Xuanzepage extends StatelessWidget {
                       width: 30,
                       height: 30,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Color(0XFFe8edf5),
                         borderRadius: BorderRadius.circular(10), // 圆角大小
                       ),
-                      child: const Icon(Icons.arrow_back, color: Colors.black, size: 20),
+                      child: const Icon(Icons.arrow_back, color: Color(0xff1c2120), size: 20),
                     ),
                     onPressed: () => Navigator.pop(context),
                     padding: EdgeInsets.zero, // 去除多余内边距
@@ -53,7 +53,7 @@ class Xuanzepage extends StatelessWidget {
                   const Spacer(),
                   const Text(
                     '       选择',
-                    style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(color: Color(0xff1c2120), fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   const Spacer(flex: 2),
                 ],

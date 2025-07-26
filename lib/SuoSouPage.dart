@@ -7,12 +7,12 @@ class SousuoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff1c2120),
+      backgroundColor: Color(0xfff7fafc),
       appBar: AppBar(
-        backgroundColor: Color(0xff1c2120),
+        backgroundColor: Color(0xfff7fafc),
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.menu, color: Colors.white),
+          icon: const Icon(Icons.menu, color: Color(0xff1c2120)),
           onPressed: () {},
         ),
         title: Row(
@@ -21,7 +21,7 @@ class SousuoPage extends StatelessWidget {
             const Text(
               '关注',
               style: TextStyle(
-                color: Colors.white70,
+                color: Color(0xff1c2120),
                 fontSize: 16,
               ),
             ),
@@ -31,7 +31,7 @@ class SousuoPage extends StatelessWidget {
               child: const Text(
                 '发现',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color(0xff1c2120),
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
@@ -42,7 +42,7 @@ class SousuoPage extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.search, color: Colors.white),
+            icon: const Icon(Icons.search, color: Color(0xff1c2120)),
             onPressed: () {
               Navigator.push(
                 context,
@@ -73,7 +73,7 @@ class SousuoPage extends StatelessWidget {
                     child: Text(
                       category,
                       style: const TextStyle(
-                        color: Colors.white,
+                        color: Color(0xff1c2120),
                         fontSize: 18,
                       ),
                     ),
@@ -83,7 +83,7 @@ class SousuoPage extends StatelessWidget {
 
                 // 向下图标
                 const SizedBox(width: 8),
-                const Icon(Icons.arrow_drop_down, color: Colors.white),
+                const Icon(Icons.arrow_drop_down, color: Color(0xff1c2120)),
               ],
             ),
           ),
@@ -124,7 +124,7 @@ class SousuoPage extends StatelessWidget {
   }) {
     return Container(
       decoration: BoxDecoration(
-        color: Color(0xff272b2a),
+        color: Color(0XFFe8edf5),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Column(
@@ -146,7 +146,7 @@ class SousuoPage extends StatelessWidget {
                   title,
                   style: const TextStyle(
                     fontSize: 14,
-                    color: Colors.white,
+                    color: Color(0xff1c2120),
                     fontWeight: FontWeight.bold,
                   ),
                   maxLines: 1,
@@ -160,18 +160,18 @@ class SousuoPage extends StatelessWidget {
                       subtitle,
                       style: const TextStyle(
                         fontSize: 12,
-                        color: Colors.white70,
+                        color: Color(0xff1c2120),
                       ),
                     ),
                     Row(
                       children: [
-                        const Icon(Icons.favorite_border, size: 16,color: Colors.white,),
+                        const Icon(Icons.favorite_border, size: 16,color: Color(0xff1c2120),),
                         const SizedBox(width: 4),
                         Text(
                           likes.toString(),
                           style: const TextStyle(
                             fontSize: 12,
-                            color: Colors.white70,
+                            color: Color(0xff1c2120),
                           ),
                         ),
                       ],

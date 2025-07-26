@@ -8,7 +8,7 @@ class JiliPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color(0xff1c2120),
+        backgroundColor: const Color(0xfff7fafc),
         body: SafeArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,11 +23,11 @@ class JiliPage extends StatelessWidget {
                           width: 30,
                           height: 30,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Color(0XFFe8edf5),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: const Icon(Icons.arrow_back,
-                              color: Colors.black, size: 20),
+                              color: Color(0xff1c2120), size: 20),
                         ),
                         onPressed: () {
                           Navigator.pushAndRemoveUntil(
@@ -43,7 +43,7 @@ class JiliPage extends StatelessWidget {
                       const Text(
                         '         记录',
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Color(0xff1c2120),
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
@@ -64,7 +64,7 @@ class JiliPage extends StatelessWidget {
                           Text(
                             ['一', '二', '三', '四', '五', '六', '日'][index],
                             style: TextStyle(
-                                color: Colors.white.withOpacity(0.7), fontSize: 14),
+                                color: Color(0xff1c2120).withOpacity(0.7), fontSize: 14),
                           ),
                           const SizedBox(height: 8),
                           Container(
@@ -82,7 +82,7 @@ class JiliPage extends StatelessWidget {
                                 style: TextStyle(
                                     color: isSelected
                                         ? Colors.black
-                                        : Colors.white.withOpacity(0.7),
+                                        : Color(0xff1c2120).withOpacity(0.7),
                                     fontSize: 14),
                               ),
                             ),
@@ -102,7 +102,7 @@ class JiliPage extends StatelessWidget {
                       const Text(
                         '今日报告',
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Color(0xff1c2120),
                             fontSize: 22,
                             fontWeight: FontWeight.bold),
                       ),
@@ -110,7 +110,7 @@ class JiliPage extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                            color: const Color(0xff2a2f2e),
+                            color: const Color(0XFFe8edf5),
                             borderRadius: BorderRadius.circular(16)),
                         child: GridView.count(
                           crossAxisCount: 2,
@@ -140,7 +140,7 @@ class JiliPage extends StatelessWidget {
                       const Text(
                         '今日计划',
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Color(0xff1c2120),
                             fontSize: 22,
                             fontWeight: FontWeight.bold),
                       ),
@@ -183,7 +183,7 @@ class JiliPage extends StatelessWidget {
       borderRadius: BorderRadius.circular(16), // 点击时的波纹圆角
       child: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff2a2f2e),
+          color: const Color(0XFFe8edf5),
           borderRadius: BorderRadius.circular(16),
         ),
         padding: const EdgeInsets.all(12),
@@ -197,7 +197,7 @@ class JiliPage extends StatelessWidget {
                 color: const Color(0xff42dee4),
                 borderRadius: BorderRadius.circular(8),
               ),
-              child: Icon(icon, color: const Color(0xff262f2d), size: 24),
+              child: Icon(icon, color: const Color(0XFFFFFFFF), size: 24),
             ),
             const SizedBox(width: 12),
             Expanded(
@@ -208,14 +208,14 @@ class JiliPage extends StatelessWidget {
                   Text(
                     title,
                     style: const TextStyle(
-                        color: Colors.white,
+                        color: Color(0xff1c2120),
                         fontSize: 12,
                         fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     value,
-                    style: const TextStyle(color: Colors.white70, fontSize: 11),
+                    style: const TextStyle(color: Colors.grey, fontSize: 11),
                   ),
                 ],
               ),
@@ -231,7 +231,7 @@ class JiliPage extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 25),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-          color: const Color(0xff2a2f2e),
+          color: const Color(0xffe8edf5),
           borderRadius: BorderRadius.circular(16)),
       child: Row(
         children: [
@@ -254,13 +254,13 @@ class JiliPage extends StatelessWidget {
               children: [
                 Text(title,
                     style: const TextStyle(
-                        color: Colors.white,
+                        color: Color(0xff1c2120),
                         fontSize: 16,
                         fontWeight: FontWeight.bold)),
                 const SizedBox(height: 4),
                 Text(subtitle,
                     style: const TextStyle(
-                        color: Colors.white70,
+                        color: Color(0xff1c2120),
                         fontSize: 14,
                         fontWeight: FontWeight.normal)),
               ],
@@ -269,7 +269,7 @@ class JiliPage extends StatelessWidget {
           Text(
             time,
             style: const TextStyle(
-                color: Colors.white70, fontSize: 14, fontWeight: FontWeight.bold),
+                color: Color(0xff1c2120), fontSize: 14, fontWeight: FontWeight.bold),
           )
         ],
       ),

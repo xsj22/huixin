@@ -9,7 +9,7 @@ class XunLianPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff1c2120),
+      backgroundColor: const Color(0xfff7fafc),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,11 +24,11 @@ class XunLianPage extends StatelessWidget {
                       width: 30,
                       height: 30,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Color(0XFFe8edf5),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Icon(Icons.arrow_back,
-                          color: Colors.black, size: 20),
+                          color: Color(0xff1c2120), size: 20),
                     ),
                     onPressed: () {
                       Navigator.pushAndRemoveUntil(
@@ -44,7 +44,7 @@ class XunLianPage extends StatelessWidget {
                   const Text(
                     '         报告',
                     style: TextStyle(
-                        color: Colors.white,
+                        color: Color(0xff1c2120),
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
@@ -66,7 +66,7 @@ class XunLianPage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: isSelected
                           ? const Color(0xff42dee4)
-                          : const Color(0xff2a2f2e),
+                          : const Color(0XFFe8edf5),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
@@ -74,7 +74,7 @@ class XunLianPage extends StatelessWidget {
                       style: TextStyle(
                         color: isSelected
                             ? Colors.white
-                            : Colors.white.withOpacity(0.7),
+                            : Colors.black.withOpacity(0.7),
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -90,16 +90,16 @@ class XunLianPage extends StatelessWidget {
                 margin: const EdgeInsets.all(16), // 外边距
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: const Color(0xff2a2f2e),
+                  color: const Color(0XFFe8edf5),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: SfCartesianChart(
-                    backgroundColor: const Color(0xff2a2f2e),
+                    backgroundColor: const Color(0XFFe8edf5),
                     plotAreaBorderWidth: 0, // ✅ 移除 plot 区边框线
                     plotAreaBackgroundColor: Colors.transparent,
                     primaryXAxis: CategoryAxis(
                       labelStyle: const TextStyle(
-                        color: Colors.white,
+                        color: Color(0xff1c2120),
                         fontSize: 12,
                       ),
                       axisLine: const AxisLine(color: Colors.transparent),
@@ -110,12 +110,12 @@ class XunLianPage extends StatelessWidget {
                       maximum: 20,
                       interval: 5,
                       labelStyle: const TextStyle(
-                        color: Colors.white,
+                        color: Color(0xff1c2120),
                         fontSize: 12,
                       ),
                       axisLine: const AxisLine(color: Colors.transparent),
                       majorGridLines: MajorGridLines(
-                        color: Colors.white.withOpacity(0.1),
+                        color: Color(0xff1c2120).withOpacity(0.1),
                       ),
                     ),
                     series: <ChartSeries>[
@@ -178,7 +178,7 @@ class XunLianPage extends StatelessWidget {
               child: const Text(
                 '历史',
                 style: TextStyle(
-                    color: Colors.white,
+                    color: Color(0xff1c2120),
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
@@ -208,7 +208,7 @@ class XunLianPage extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 20),
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
       decoration: BoxDecoration(
-        color: const Color(0xff2a2f2e),
+        color: const Color(0XFFe8edf5),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Row(
@@ -220,13 +220,13 @@ class XunLianPage extends StatelessWidget {
             children: [
               Text(
                 day,
-                style: const TextStyle(color: Colors.white, fontSize: 14),
+                style: const TextStyle(color: Color(0xff1c2120), fontSize: 14),
               ),
               const SizedBox(height: 4),
               Text(
                 date,
                 style: const TextStyle(
-                    color: Colors.white,
+                    color: Color(0xff1c2120),
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
@@ -236,7 +236,7 @@ class XunLianPage extends StatelessWidget {
           Container(
             width: 1,
             height: 40,
-            color: Colors.white.withOpacity(0.3),
+            color: Color(0xff1c2120).withOpacity(0.3),
           ),
           // 训练次数
           Column(
@@ -244,13 +244,13 @@ class XunLianPage extends StatelessWidget {
             children: [
               const Text(
                 '训练次数',
-                style: TextStyle(color: Colors.white70, fontSize: 12),
+                style: TextStyle(color: Color(0xff1c2120), fontSize: 12),
               ),
               const SizedBox(height: 4),
               Text(
                 count,
                 style: const TextStyle(
-                    color: Colors.white,
+                    color: Color(0xff1c2120),
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
@@ -262,13 +262,13 @@ class XunLianPage extends StatelessWidget {
             children: [
               const Text(
                 '时间',
-                style: TextStyle(color: Colors.white70, fontSize: 12),
+                style: TextStyle(color: Color(0xff1c2120), fontSize: 12),
               ),
               const SizedBox(height: 4),
               Text(
                 time,
                 style: const TextStyle(
-                    color: Colors.white,
+                    color: Color(0xff1c2120),
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),

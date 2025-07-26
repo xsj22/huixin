@@ -40,7 +40,7 @@ class _XunlianingPageState extends State<XunlianingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xfff7fafc),
       body: SafeArea(
         child: Column(
           children: [
