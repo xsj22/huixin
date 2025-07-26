@@ -164,7 +164,7 @@ class FaxianPage extends StatelessWidget {
           style: const TextStyle(fontSize: 12, color: Color(0xff1c2120)),
         ),
         onTap: () {
-          // 跳转到聊天详情页
+          // 跳转到聊天详情页性收费电视v但是vv
           Navigator.push(
             context,
             MaterialPageRoute(
